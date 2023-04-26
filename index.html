@@ -1,0 +1,12 @@
+<div id="app"></div>
+<a href="https://login.btn.social/01GYZMRBGCEMVMHCSSSKMREEW2/github">
+  Login with GitHub
+</a>
+<script async data-jsonp="myCallback" src="https://btn.social/v1/web.js"></script>
+<script defer>
+  function myCallback() {
+    btnsocial.onlogin(function (payload) {
+      console.log("login complete", payload);
+    });
+  }
+</script>
